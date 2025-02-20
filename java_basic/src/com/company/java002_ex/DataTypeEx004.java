@@ -25,7 +25,7 @@ public class DataTypeEx004 {
 		
 		// 처리 - 총점, 평균 A = B (B를 처리해ㅓ A에 담기 - 대입)
 		total = kor + eng + math;
-		avg = (float) total / 3;   // 정수/정수 = 정수   299/3  몫 해경방안) 정수/실수, 실수/정수  // avg = total / 3.0
+		avg = (float) total / 3;   // 정수/정수 = 정수   299/3  몫 해결방안) 정수/실수, 실수/정수  // avg = total / 3.0
 		
 		// 출력 - 총점, 평균 출력
 		System.out.printf("총점 : %d \n평균 : %.2f", total, avg);

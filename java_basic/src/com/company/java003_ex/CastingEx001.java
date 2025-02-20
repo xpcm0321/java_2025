@@ -22,7 +22,7 @@ public class CastingEx001 {
 		// 처리
 		result = (double) num1 / num2;
 		// 출력
-		// 10 / 3 = 3.33                              String.format("출력서식", 처리할 값);
+		// 10 / 3 = 3.33                                  String.format("출력서식", 처리할 값);
 		System.out.println( num1 + " / " + num2 + " = " + String.format("%.2f", result));
 		System.out.printf("%d / %d = %.2f", num1, num2, (num1 / (float) num2));
 	} // end main
