@@ -41,6 +41,25 @@
 #### 6. 2025-02-24
   1. 제어문 (3) (if, switch), 반복문 (for, while, do while), 제어키워드 (break, continue))
      -> 오늘은 반복문 (while, do while) 배움! (정확한 문법)
-  2. Array(배열)
+  2. FOR/while/do while문
+     -> 연습문제 1~2
+  3. Array(배열) ([같은 타입]의 데이터를 연속된 공간에 저장하는 자료구조, 각 데이터의 저장 위치는 [인덱스]를 통해서 접근)
+     -> [heap-동적데이터]           [stack-임시데이터]
+        1번지{1,     2,     3}    ←    arr 1번지
+          arr[0] arr[1] arr[2]
+  4. Array
+     -> 연습문제 1~5
+  5. bootstrap (소스 제공)
+     -> https://www.w3schools.com/
+  6. HTML 요소정리
+     -> 영역(div)잡고 제목(h1~h6)-내용(p)
+     -> p - text
+     -> p - img <img src="경로" alt="대체텍스트" />
+     -> 링크 <a href="경로" title="네이버 포털사이트 바로가기">네이버</a>
+     -> 순서 없는 항목 <ul><li>apple</li> <li>banana</li> <li>coconut</li></ul>
+     -> 순서 있는 항목 <ol><li>계산을 한다.</li> <li>껍질을 깐다</li> <li>삼각김밥 먹기</li></ol>
+     -> <dl><dt>apple?</dt> <dd>맛있는 먹거리</dd></dl>
+
+---
 
 
