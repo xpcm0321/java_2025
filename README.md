@@ -58,7 +58,7 @@
      -> 링크 <a href="경로" title="네이버 포털사이트 바로가기">네이버</a>
      -> 순서 없는 항목 <ul><li>apple</li> <li>banana</li> <li>coconut</li></ul>
      -> 순서 있는 항목 <ol><li>계산을 한다.</li> <li>껍질을 깐다</li> <li>삼각김밥 먹기</li></ol>
-     -> <dl><dt>apple?</dt> <dd>맛있는 먹거리</dd></dl>
+     -> 설명 목록<dl><dt>apple?</dt> <dd>맛있는 먹거리</dd></dl>
 
 ---
 
