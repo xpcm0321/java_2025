@@ -6,16 +6,18 @@ public class Array2Ex006 {
 		int [][] result = new int [datas.length + 1][datas[0].length + 1];  // 4층 5칸
 		
 		// #1. result에 datas 데이터 복사하기   result[0][0] = datas[0][0];
-		for (int ch = 0; ch < datas.length; ch++) {  // #1. 층의 정보
+		/* for (int ch = 0; ch < datas.length; ch++) {  // #1. 층의 정보
 			for (int kan = 0; kan < datas[ch].length; kan++) {  // #2. 칸의 정보
 				result[ch][kan] = datas[ch][kan];
 			}
-		}
+		} */
+		
 		// #2. 가로방향 누적 데이터
 		// result[0][4] += result[0][0];
 		// result[0][4] += result[0][1];
 		// result[0][4] += result[0][2];
 		// result[0][4] += result[0][3];
+		
 		/* for (int kan = 0; kan < 4; kan++) {
 			result[0][4] += result[0][kan];
 		} */
@@ -24,28 +26,27 @@ public class Array2Ex006 {
 		// result[1][4] += result[1][1];
 		// result[1][4] += result[1][2];
 		// result[1][4] += result[1][3];
+		
 		/* for (int kan = 0; kan < 4; kan++) {
 			result[1][4] += result[1][kan];
 		} */
 		
-//		for (int kan = 0; kan < 4; kan++) {
-//			result[0][4] += result[0][kan];
-//		}
-//		for (int kan = 0; kan < 4; kan++) {
-//			result[1][4] += result[1][kan];
-//		}
-//		for (int kan = 0; kan < 4; kan++) {
-//			result[2][4] += result[2][kan];
-//		}
-		/*
-		for (int ch = 0; ch < datas.length; ch++) {
+		/* for (int kan = 0; kan < 4; kan++) {
+			result[0][4] += result[0][kan];
+		}
+		for (int kan = 0; kan < 4; kan++) {
+			result[1][4] += result[1][kan];
+		}
+		for (int kan = 0; kan < 4; kan++) {
+			result[2][4] += result[2][kan];
+		} */
+		
+		/* for (int ch = 0; ch < datas.length; ch++) {
 			for (int kan = 0; kan < datas[ch].length; kan++) {  // datas[ch].length;   3
 				// result[ch][4] += result[ch][kan];
 				result[ch][datas[ch].length] += result[ch][kan];
 			}
-		}
-		*/
-		
+		} */
 		
 		// 10(00)   10(01)   10(02)   10(03)   40(04)   
 		// 20(10)   20(11)   20(12)   20(13)   80(14)   

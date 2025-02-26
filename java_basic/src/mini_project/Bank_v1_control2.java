@@ -2,7 +2,7 @@ package mini_project;
 
 import java.util.Scanner;
 
-public class Bank_v1_control {
+public class Bank_v1_control2 {
 	public static void main(String[] args) {
 		// 변수
 		int num, balance = 0, in = 0, out = 0, cash = 0;
@@ -39,7 +39,7 @@ public class Bank_v1_control {
 					balance = scanner.nextInt();
 				break; // end case1
 				
-				case 2 : System.out.println("조회기능입니다.");
+				case 2 :
 					// Step4
 					// 변수 - 임시변수 temp_id, 임시변수 temp_pass
 					char temp_id = ' ', temp_pass = ' ';
@@ -50,6 +50,7 @@ public class Bank_v1_control {
 					
 					System.out.println("password : ");
 					temp_pass = scanner.next().charAt(0);
+					// System.out.println("조회기능입니다.");
 					
 					// 처리 - if(temp_id 와 id 가 같고 temp_pass 와 pass 가 같다면) {사용자 정보 출력}
 					//      else {아니라면 비밀번호 확인해주세요.}
@@ -64,13 +65,13 @@ public class Bank_v1_control {
 					// 출력
 				break; // end case2
 				
-				case 3 : System.out.println("입금기능입니다.");
+				case 3 :
 					System.out.println("id : ");
 					temp_id = scanner.next().charAt(0);
 					
 					System.out.println("password : ");
 					temp_pass = scanner.next().charAt(0);
-					
+					// System.out.println("입금기능입니다.");
 					if (id == temp_id && pass == temp_pass) {
 						System.out.println("id : " + id + "\npass : " + pass + "\nbalance : " + balance);
 						System.out.println("입금 : ");
@@ -83,13 +84,13 @@ public class Bank_v1_control {
 					}
 				break; // end case3
 				
-				case 4 : System.out.println("출금기능입니다.");
+				case 4 : 
 					System.out.println("id : ");
 					temp_id = scanner.next().charAt(0);
 					
 					System.out.println("password : ");
 					temp_pass = scanner.next().charAt(0);
-					
+					// System.out.println("출금기능입니다.");
 					if (id == temp_id && pass == temp_pass) {
 						System.out.println("id : " + id + "\npass : " + pass + "\nbalance : " + balance);
 						System.out.println("출금 : ");
@@ -102,13 +103,13 @@ public class Bank_v1_control {
 					}
 				break; // end case4
 				
-				case 5 : System.out.println("삭제기능입니다.");
+				case 5 : 
 					System.out.println("id : ");
 					temp_id = scanner.next().charAt(0);
 					
 					System.out.println("password : ");
 					temp_pass = scanner.next().charAt(0);
-					
+					// System.out.println("삭제기능입니다.");
 					if (id == temp_id && pass == temp_pass) {
 						System.out.println("id : " + id + "\npass : " + pass + "\nbalance : " + balance);
 						System.out.println("계좌를 삭제하시겠습니까? (Y/N)");

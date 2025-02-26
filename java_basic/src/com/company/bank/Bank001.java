@@ -66,15 +66,16 @@ public class Bank001 {
 					} else if (del == 'n' || del == 'N') {
 						System.out.println();
 					}
-					continue;
+					break;
 				case 9 :
 					System.out.println("종료기능 입니다.");
 					clo = scanner.next();
+					break;
 				}
 			} else {
 				switch (input) {
 				case 2 : case 3 : case 4 : case 5 :
-					System.out.println("비밀번호 확인해주세요.");
+					System.out.println("다시 한 번 확인해주세요.");
 					break;
 				}
 			}
