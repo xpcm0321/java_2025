@@ -79,5 +79,7 @@
   2. Method 사용법
      -> Step1) 함수정의
      -> Step1) 함수호출
+  3. HTML 요소정리(3)
+     -> document.getElementById(id).onclick(alert(''); alert(''));
 
 ---
