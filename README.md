@@ -114,3 +114,12 @@
      -> 3) 여러 개의 객체(인스턴스)를 만들기
      -> 클래스는 설계도
      -> 인스턴스는 실제로 만들어진 객체
+  5. HTML 요소정리(4)
+     -> document.querySelector("#b").onclick = () => {
+        document.querySelector("#b").style.background="black";
+        document.querySelector("#b").style.color="white";
+      };
+     -> document.querySelector(".c").onclick = () => {
+        document.querySelector(".c").style.background="skyblue";
+        document.querySelector(".c").style.color="blue";
+      };
