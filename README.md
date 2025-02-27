@@ -119,6 +119,7 @@
         document.querySelector("#b").style.background="black";
         document.querySelector("#b").style.color="white";
       };
+     
      -> document.querySelector(".c").onclick = () => {
         document.querySelector(".c").style.background="skyblue";
         document.querySelector(".c").style.color="blue";
