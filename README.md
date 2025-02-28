@@ -124,3 +124,37 @@
         document.querySelector(".c").style.background="skyblue";
         document.querySelector(".c").style.color="blue";
       };
+
+---
+#### 2025-02-28
+  1. 생성자
+     -> new 연산자에 의해 호출 [초기화] 담당
+  2. 기본 생성자(default 생성자)
+     -> 모든 클래스에 생성자가 반드시 존재
+     -> 생성자 선언을 생략 시 컴파일러가 자동으로 기본 생성자를 추가
+     -> 개발자가 선언 시 컴파일러가 자동 생성 취소
+  3. 생성자 형식
+     -> class A {
+          public A(){ //기본생성자
+          public A(String name){}  //파라미터, argument가 있는 생성자
+        }
+
+     -> 리턴 값 없음 - 리턴 값 메서드명(파라미터)
+     -> 클래스명과 동일
+     -> 디폴트생성자를 생성해야하는 경우 : 오버로딩, 상속
+     -> 연습문제 1~4
+
+  4. runtime data area
+     -> method : 정보 저장, static, final
+     -> heap : 동적 저장 - new, gc(garbage collector)가 처리 소멸
+     -> stack : 임시 값 저장
+
+  5. static
+     -> jvm 소스 로딩 시 메모리 할당 받음
+     -> new 연산자보다 먼저 실행됭어 메모리(method 영역 : runtime)에 1회 생성
+     -> 클래스명, 변수명 / 클래스명, 메서드명 - 클래스변수 / 클래스 메서드
+     -> 객체 생성과 관련이 없음
+     -> 인스턴스로 접근 시 권장사항이 아니므로 경고 발생
+     -> 연습문제 1~2
+
+---
