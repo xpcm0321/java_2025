@@ -1,0 +1,20 @@
+PS D:\git_test> git init
+Reinitialized existing Git repository in D:/git_test/.git/
+PS D:\git_test> 
+ *  복원된 기록 
+
+PS D:\git_test> git add .
+PS D:\git_test> git status 
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+PS D:\git_test> git commit -m "first" 
+[master (root-commit) 727fe94] first
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+PS D:\git_test> 
