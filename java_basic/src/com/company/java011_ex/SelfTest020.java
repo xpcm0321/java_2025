@@ -1,10 +1,10 @@
 package com.company.java011_ex;
 
 public class SelfTest020 {
-
+	public static String hi(String str) { return "Hi " + str + "~"; }
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println( hi("sally"));
 	}
 
 }

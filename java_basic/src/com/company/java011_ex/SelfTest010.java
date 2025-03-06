@@ -8,9 +8,7 @@ public class SelfTest010 {
 			System.out.print(i + "\t");
 			i++;
 		} while (i < 11);
-
 	}
-
 }
 /*
 [SelfTest010] do while 

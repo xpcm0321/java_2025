@@ -12,7 +12,6 @@ public class SelfTest011 {
 			num = scanner.nextInt();
 			if (num == 100) { break; }
 		}
-
 	}
 }
 /*

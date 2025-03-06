@@ -10,6 +10,17 @@ public class SelfTest007 {
 		System.out.print("알파벳을 입력해주세요 > ");
 		alpha = scanner.next();
 
+		switch (alpha) {
+		case "A" : case "a" :
+			System.out.println("apple");
+			break;
+		case "B" : case "b" :
+			System.out.println("banana");
+			break;
+		case "C" : case "c" :
+			System.out.println("coconut");
+			break;
+		}
 	}
 }
 /*

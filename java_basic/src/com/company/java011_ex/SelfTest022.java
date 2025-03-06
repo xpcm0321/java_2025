@@ -3,8 +3,6 @@ package com.company.java011_ex;
 public class SelfTest022 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

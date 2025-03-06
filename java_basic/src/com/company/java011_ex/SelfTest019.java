@@ -1,10 +1,12 @@
 package com.company.java011_ex;
 
 public class SelfTest019 {
+	public static int hap(int a, int b) { return a + b; }
+	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		hap(3, 5);
+		hap(3, 5);
 	}
 
 }

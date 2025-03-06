@@ -1,12 +1,11 @@
 package com.company.java011_ex;
 
 public class SelfTest018 {
-
+	public static void cat() { System.out.println("야옹"); }
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		cat();
 	}
-
 }
 /*
 [SelfTest018] 함수(1) : 함수의 구조	

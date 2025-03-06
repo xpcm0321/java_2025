@@ -10,9 +10,8 @@ public class SelfTest012 {
 		for (;;) {
 			System.out.print("숫자를 입력해주세요 > ");
 			num = scanner.nextInt();
-			while (num == 100) { break; }
+			while (num >= 100) { break; }
 		}
-
 	}
 }
 /*
