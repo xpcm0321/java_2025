@@ -210,5 +210,7 @@
      -> 개발코드와 객체사이 연결
      -> 개발코드 변경 없이 객체를 바꿔낄 수 있도록 하는 역할
      -> 추상화 정도가 abstract보다 interface가 더 높다
+  3. HTML+CSS+JS
+     -> getElementById 이용해서 버튼 클릭 시 속성 변경
 
 ---
