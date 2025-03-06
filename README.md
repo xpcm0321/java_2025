@@ -199,4 +199,16 @@
 
   4. HTML+CSS+JS
      -> font 속성(글자색:color, 글자사이즈:font-size, 기울이기:font-style:italic/normal, 굵게:font-weight:bold/normal, 글꼴:font-family)
-     -> 문단 속성(행간:line-height, 정렬:text-align, 들여쓰기:text-indent, 밑줄:text-decoration:underline(밑줄)/none(밑줄쳐져있는 속성 없애기)/line-through(취소선), 자간(글자간격):letter-spacing     
+     -> 문단 속성(행간:line-height, 정렬:text-align, 들여쓰기:text-indent, 밑줄:text-decoration:underline(밑줄)/none(밑줄쳐져있는 속성 없애기)/line-through(취소선), 자간(글자간격):letter-spacing
+
+---
+#### 2025-03-06
+  1. Abstract
+     -> 추상화 : 실체화된 객체들간의 공통되는 특성을 추출한 것
+     -> 공통된 필드와 메서드의 이름을 통일할 목적
+  2. Interface
+     -> 개발코드와 객체사이 연결
+     -> 개발코드 변경 없이 객체를 바꿔낄 수 있도록 하는 역할
+     -> 추상화 정도가 abstract보다 interface가 더 높다
+
+---
