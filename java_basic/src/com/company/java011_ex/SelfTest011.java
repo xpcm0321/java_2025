@@ -10,7 +10,7 @@ public class SelfTest011 {
 		for (;;) {
 			System.out.print("숫자를 입력해주세요 > ");
 			num = scanner.nextInt();
-			if (num == 100) { break; }
+			if (num >= 1 && num <= 100) { break; }
 		}
 	}
 }

@@ -7,10 +7,10 @@ public class SelfTest012 {
 		int num = 0;
 		Scanner scanner = new Scanner(System.in);
 		
-		for (;;) {
+		while (true) {
 			System.out.print("숫자를 입력해주세요 > ");
 			num = scanner.nextInt();
-			while (num >= 100) { break; }
+			if (num >= 1 && num <= 100) { break; }
 		}
 	}
 }
