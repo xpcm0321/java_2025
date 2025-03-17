@@ -1,0 +1,12 @@
+Q1. 클라이언트 ↔ 서버?
+Web프로그래밍 : 단방향
+Socket프로그래밍 : 양방향
+
+클라이언트 : 서비스이용( 요청 -> request )
+서버 : 서비스제공( 응답 -> response )
+
+Q2. WS와 WAS?
+Web Server는 정적콘텐츠 (Apache) / 정적서버
+WAS server는 동적콘텐츠 (Apache + Tomcat) / 동적서버
+
+Q3. FORM 태그 - 처리컨테이너( action ) / 처리방식( method ) - 데이터넘길 때 보관이름( name )
