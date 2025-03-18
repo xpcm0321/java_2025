@@ -1,0 +1,28 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>mysql
+Q1. userinfo 테이블의 구조
+mysql> desc userinfo;
+
+mysql>
+create table userinfo(
+no int not null auto_increment primary key,
+name varchar(100) not null,
+age int not null
+);
+
+mysql> select * from userinfo;
+
+ 5, fifth, 555 데이터 추가
+insert into userinfo values (5. 'fifth', 555);
+
+또는
+
+insert into userinfo (name, age) values ('fifth', 555); // 내가 원하는 필드만 찍어서 쓸 때
+
+Q2. no가 5번인 데이터의 age를 55로 변경
+update userinfo set age=55 where no=5;
+
+Q3. no가 5번이고 name이 fifth인 데이터 삭제
+delete from userinfo where no=5 and name='fifth';
+
+Q4. userinfo 데이터 출력
+select * from userinfo;

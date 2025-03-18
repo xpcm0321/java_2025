@@ -1,0 +1,28 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>jsp
+Q1. 클라이언트의 파일
+전송버튼을 눌렀을 때 jsp007_result.jsp 파일에서 빠진 코드 작성
+<form action="jsp007_result.jsp" method="get">
+  <div class="my-3">
+    <label for="query" class="form-label">검색어</label>
+    <input type="text" class="form-control" id="query" name="para" />
+    <button type="submit" class="btn btn-danger">submit</button>
+  </div>
+</form>
+
+---------------------------
+## jsp007_result.jsp
+<div class="container card my-5">
+  <h3 class="card header">MY 검색어</h3>
+  <%
+    String search = request.getParameter("para"); // input의 name 값
+  %>
+  <p> 검색어 : <%=search=%></p>
+  <p><a href="javascript:history.go(-1)" class="btn btn=danger">BACK</a></p>
+</div>
+
+Q2. jdbc를 구현하려고 한다.
+필요한 메서드적으시오
+
+1) 드라이버로드( Class.forName("com.mysql.cj.jdbc.Driver"); )
+2) DB연동( Connection conn = DriverManager.getConnection(
+                                       "jdbc:mysql://localhost:3306/mbasic", "root", "1234") )
