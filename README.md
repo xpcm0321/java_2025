@@ -44,23 +44,13 @@
   2. FOR/while/do while문
      -> 연습문제 1~2
   3. Array(배열) ([같은 타입]의 데이터를 연속된 공간에 저장하는 자료구조, 각 데이터의 저장 위치는 [인덱스]를 통해서 접근)
-     -> [heap-동적데이터]           [stack-임시데이터]
-        1번지{1,     2,     3}    ←    arr 1번지
-          arr[0] arr[1] arr[2]
+     
   4. Array
      -> 연습문제 1~5
   5. bootstrap (소스 제공)
      -> https://www.w3schools.com/
   6. HTML 요소정리(1)
-     -> 영역(div)잡고 제목(h1~h6)-내용(p)
-     -> p - text
-     -> p - img <img src="경로" alt="대체텍스트" />
-     -> 링크 <a href="경로" title="네이버 포털사이트 바로가기">네이버</a>
-
-     -> 순서 없는 항목 <ul><li>apple</li> <li>banana</li> <li>coconut</li></ul>
-     -> 순서 있는 항목 <ol><li>계산을 한다.</li> <li>껍질을 깐다</li> <li>삼각김밥 먹기</li></ol>
-     -> 설명 목록<dl><dt>apple?</dt> <dd>맛있는 먹거리</dd></dl>
-
+  
 ---
 #### 7. 2025-02-25
   1. Array
@@ -77,8 +67,7 @@
      -> function, method, 멤버함수
      -> 연습문제 1~4
   2. Method 사용법
-     -> Step1) 함수정의
-     -> Step1) 함수호출
+     -> 함수정의, 함수호출
   3. HTML 요소정리(3)
      -> document.getElementById(id).onclick(alert(''); alert(''));
 
@@ -109,22 +98,15 @@
      -> OOP : 객체 지향 프로그래밍(부품객체(클래스) 조립 완성된 프로그램을 만드는 기법)
      -> 연습문제 1~2
   4. 클래스와 인스턴스
-     -> 1) 클래스(설계도)틀로
-     -> 2) 인스턴스화를 통해( new 실제 메모리-heap에 객체만들기)
-     -> 3) 여러 개의 객체(인스턴스)를 만들기
-     -> 클래스는 설계도
-     -> 인스턴스는 실제로 만들어진 객체
+     -> 1) 클래스(설계도)틀로 인스턴스화를 통해( new 실제 메모리-heap에 객체만들기)
+     -> 2) 여러 개의 객체(인스턴스)를 만들기
+     -> 클래스는 설계도 / 인스턴스는 실제로 만들어진 객체
   5. HTML 요소정리(4)
      -> document.querySelector("#b").onclick = () => {
         document.querySelector("#b").style.background="black";
         document.querySelector("#b").style.color="white";
       };
-     
-     -> document.querySelector(".c").onclick = () => {
-        document.querySelector(".c").style.background="skyblue";
-        document.querySelector(".c").style.color="blue";
-      };
-
+    
 ---
 #### 2025-02-28
   1. 생성자
@@ -134,10 +116,7 @@
      -> 생성자 선언을 생략 시 컴파일러가 자동으로 기본 생성자를 추가
      -> 개발자가 선언 시 컴파일러가 자동 생성 취소
   3. 생성자 형식
-     -> class A {
-          public A(){ //기본생성자
-          public A(String name){}  //파라미터, argument가 있는 생성자
-        }
+     -> class A { public A(){ public A(String name){} }
 
      -> 리턴 값 없음 - 리턴 값 메서드명(파라미터)
      -> 클래스명과 동일
@@ -167,21 +146,14 @@
      -> 연습문제 1~2
   4. 클래스배열
      -> 클래스[] 배열명 = new 클래스[갯수];
-
-  String[] arr = new String[3];
-  A1 [] arr = new A1[3]; // [ null, null, null ]
-  ※ null - 공간은 있지만 값이 비어있어!
-
   carr[0] = new A1();  ※ 생성자를 불러서 인스턴스변수를 초기화해 사용가능하게 만들기
   1번지{ name = ""; }  ← carr[0] 1번지
-
     -> 연습문제 1~2(2번은 아직 오류남!)
 
 ---
 #### 2025-03-05
   1. 상속
-     -> 클래스의 재사용 - 새로운 부분만 추가, 수정해서 사용
-     -> 모든클래스는 Object 클래스를 상속
+     -> 클래스의 재사용 - 새로운 부분만 추가, 수정해서 사용 / 모든클래스는 Object 클래스를 상속
      -> UML - 부모 - 자식
      -> 장점 - 빠른 개발, 코드의 중복성 제거, 다형성(하나의 타입으로 여러 타입을 관리)
      -> 문법 : class 자식클래스 extends 부모클래스 (O) 단일 상속 | class 자식클래스 extends 부모클래스1, 부모클래스2 (X)
@@ -234,5 +206,62 @@
      -> 연습문제 1~4
   3. Set
      -> 연습문제 1~4
+
+---
+#### 2025-03-11
+  1. MAP 만들기
+     -> 연습문제 1~3
+
+  2. Lambda + Stream
+     -> Lambda : 자바에서 함수적 프로그래밍 지원기법
+
+---
+#### 2025-03-12
+  1. 자바 API의 함수형 인터페이스
+     -> Consumer - 받는용도 - accept
+     -> Supplier - 제공용도 - get
+     -> Predicate - 판단용도 - test
+     -> Function - 처리용도 - apply
+     -> Operator - 연산용도 - apply
+     
+  2. Stream
+     -> 데이터 종류에 상관없이 같은 방식으로 처리
+
+  3. JAVA I/O
+     -> 입력과 출력, 두 대상 간의 데이터를 주고 받는 것
+     -> byte 단위 / char 단위
+
+---
+#### 2025-03-13
+  1. 폴더 / 파일 만들기
+
+---
+#### 2025-03-14
+  1. Thread
+     -> 프로세스 : 실행 중인 하나의 프로그램
+     -> 멀티프로세스 : 동시에 여러 프로세스를 실행
+     -> 연습문제 1
+
+  2. Network
+     -> 연결된 통신을 이용해서 컴퓨터의 자원을 공유
+     -> 클라이언트 : 서비스 사용 / 서버 : 서비스 제공
+     -> TCP : IP 위에서 동작, 데이터의 전달을 보충하고, 보낸 순서대로 받게 해주는 역할
+     -> IP : 패킷통신 - 작은 단위로 나눠서 전송하는 방식, 전달 보증 X, 받는 순서와 보내는 순서가 다름
+     -> 특징 : 연결지향이므로 데이터는 정확하고 안전하게 전달되지만 통신선로를 고정하므로 전송 속도가 느림
+
+---
+#### 2025-03-17
+  1. JSP
+     -> TCP/IP 기반으로 연결되어 있는 컴퓨터 네트워크  클라이언트 ↔ 서버
+     -> WS vs WAS : WS는 정적콘텐츠 / WAS는 동적콘텐츠
+     
+  2. MYSQL
+     -> DBMS(Database Management System) : 데이터베이스 관리 시스템
+     -> RDBMS(Relational Database Management System) : 관계형 데이터베이스 관리 시스템
+     -> 데이터베이스언어 : 정의어(DDL) / 조작어(DML) / 제어어(DCL)
+
+---
+#### 2025-03-18
+
 
 ---
