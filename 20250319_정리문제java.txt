@@ -1,0 +1,45 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>java
+Q1. 자바의 접근자 범위를 넓은 범위에서 좁은 범위
+
+Q2. 오버로딩/오버라이딩?
+
+Q3. abstract과 interface의 차이점?
+abstract : 추상화
+interface : 추상화 정도가 abstract 보다 더 높다.
+
+Q4. 다형성은 한가지 타입(부모)으로 여러개의 자료형(자식)을 관리하려고 사용한다.
+다음을 확인하고 Driver 클래스 구현
+
+1. 상속도
+	Vehicle (run())
+	↑	  ↑
+MotorCycle	Car
+(run())		(run()) @Override
+
+Driver (사용객체-MotorCycle, Car)
+
+2. 주어진코드
+interface Vehicle { public void run(); }
+class MotorCycle implements Vehicle {
+  @Override public void run() {
+    System.out.println("오토바이가 달립니다.");
+  }
+}
+
+class Car implements Vehicle {
+  @Override public void run() {
+    System.out.println("자동차가 달립니다.");
+  }
+}
+
+class void Driver
+
+public class InterfaceEx003 {
+  public static void main(String[] args) {
+    Driver driver = new Driver();
+    Car car = new Car();
+    MotorCycle mo = new MotorCycle();
+    driver.drive(car);
+    driver.drive(mo);
+  }
+}
