@@ -44,7 +44,7 @@
 			// 1. 드라이버연동
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			// 2. db연동
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic", "root", "wlsdlgks9523dls!!");
 			// 3. PreparedStatement
 			pstmt = conn.prepareStatement("select * from milk");
 			rset = pstmt.executeQuery();
@@ -99,7 +99,7 @@
 			 	// 1. Driver 연동
 			 	Class.forName("com.mysql.cj.jdbc.Driver");
 				// 2. DB 연동  - close()
-				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic", "root", "1234");
+				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic", "root", "wlsdlgks9523dls!!");
 				// 3. PreparedStatement 이용해서 sql 처리   ## 최신주문이 위로 올라오게
 				pstmt = conn.prepareStatement(sql);
 				rset = pstmt.executeQuery();
@@ -166,12 +166,12 @@
 			    function order(){
 			    	let oname = document.getElementById("oname");
 			    	let onum = document.getElementById("onum");
-			    	if(oname.value == ""){
+			    	if(oname.value = ""){
 			    		alert("빈칸입니다.");
 			    		oname.focus();
 			    		return false;
 			    	}
-			    	if(onum.value == ""){
+			    	if(onum.value = ""){
 			    		alert("빈칸입니다.");
 			    		onum.focus();
 			    		return false;
@@ -224,21 +224,22 @@
 			    	let oname_update = document.getElementById("oname_update");
 			    	let onum_update = document.getElementById("onum_update");
 			    	
-			    	if(ono_update.value == ""){
+			    	if(ono_update.value = ""){
 			    		alert("빈칸입니다.");
 			    		ono_update.focus();
 			    		return false;
 			    	}
-			    	if(oname_update.value == ""){
+			    	if(oname_update.value = ""){
 			    		alert("빈칸입니다.");
 			    		oname_update.focus();
 			    		return false;
 			    	}
-			    	if(onum_update.value ==s ""){
+			    	if(onum_update.value = ""){
 			    		alert("빈칸입니다.");
 			    		onum_update.focus();
 			    		return false;
 			    	}
+			    	
 			    }
 			    </script>
 		      <!--  주문수정 end  -->
@@ -274,7 +275,7 @@
 			    <script>
 			    function form(){
 			    	let ono_delete = document.querySelector("#ono_delete");
-			    	if(ono_delete.value == "") {
+			    	if(ono_delete == "") {
 			    		alert("빈칸입니다.");
 			    		ono_delete.focus();
 			    		return false;

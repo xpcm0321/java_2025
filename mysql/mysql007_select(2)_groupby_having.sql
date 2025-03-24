@@ -207,7 +207,7 @@ order by deptno asc;
 select deptno, job, count(*) `사원수`, max(sal) `최고급여`, sum(sal) `급여합`, avg(sal) `평균급여`
 from emp
 group by deptno, job
-order by deptno, job asc;
+order by deptno, job;
 
 select deptno, job, count(*) `사원수`, max(sal) `최고급여`, sum(sal) `급여합`, avg(sal) `평균급여`
 from emp

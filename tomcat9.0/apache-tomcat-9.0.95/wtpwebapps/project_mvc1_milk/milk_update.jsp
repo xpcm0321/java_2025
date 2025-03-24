@@ -8,7 +8,6 @@
 	int ono = Integer.parseInt(request.getParameter("ono"));
 	String oname = request.getParameter("oname");
 	int onum = Integer.parseInt(request.getParameter("onum"));
-	out.println(ono + "/" + oname + "/" + onum);
 
 	Connection conn = null;
 	PreparedStatement pstmt = null;

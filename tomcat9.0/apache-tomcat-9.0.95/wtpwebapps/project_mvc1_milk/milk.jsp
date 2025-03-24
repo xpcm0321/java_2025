@@ -149,7 +149,7 @@
 		           method="방식"     데이터 노출안됨 (post)
 		           name             oname, onum               text, number, email
 		      -->
-		        <form action="milk_insert.jsp" method="post" onsubmit="return form()">
+		        <form action="milk_insert.jsp" method="post" onsubmit="return order()">
 				  <div class="mb-3 mt-3">
 				    <label for="oname" class="form-label">주문할 우유이름</label>
 				    <input type="text" class="form-control" id="oname"
@@ -163,10 +163,15 @@
 				  <button type="submit" class="btn btn-danger">주문하기</button>
 			    </form>
 			    <script>
-			    function form(){
-			    	let onum = document.querySelector("#onum");
-			    	
-			    	if(onum == "") {
+			    function order(){
+			    	let oname = document.getElementById("oname");
+			    	let onum = document.getElementById("onum");
+			    	if(oname.value == ""){
+			    		alert("빈칸입니다.");
+			    		oname.focus();
+			    		return false;
+			    	}
+			    	if(onum.value == ""){
 			    		alert("빈칸입니다.");
 			    		onum.focus();
 			    		return false;
@@ -195,7 +200,7 @@
 		           method="방식"     데이터 노출안됨 (post)
 		           name             ono, oname, onum               number, text, number
 		      -->
-		        <form action="milk_update.jsp" method="post" onsubmit="return form()">
+		        <form action="milk_update.jsp" method="post" onsubmit="return order1()">
 				  <div class="mb-3 mt-3">
 				    <label for="ono_update" class="form-label">수정 주문번호</label>
 				    <input type="number" class="form-control" id="ono_update"
@@ -214,12 +219,24 @@
 				  <button type="submit" class="btn btn-danger">수정하기</button>
 			    </form>
 			    <script>
-			    function form(){
-			    	let onum_update = document.querySelector("#onum_update");
+			    function order1(){
+			    	let ono_update = document.getElementById("ono_update");
+			    	let oname_update = document.getElementById("oname_update");
+			    	let onum_update = document.getElementById("onum_update");
 			    	
-			    	if(onum_update == "") {
+			    	if(ono_update.value == ""){
 			    		alert("빈칸입니다.");
-			    		onum_delete.focus();
+			    		ono_update.focus();
+			    		return false;
+			    	}
+			    	if(oname_update.value == ""){
+			    		alert("빈칸입니다.");
+			    		oname_update.focus();
+			    		return false;
+			    	}
+			    	if(onum_update.value ==s ""){
+			    		alert("빈칸입니다.");
+			    		onum_update.focus();
 			    		return false;
 			    	}
 			    }
@@ -257,8 +274,7 @@
 			    <script>
 			    function form(){
 			    	let ono_delete = document.querySelector("#ono_delete");
-			    	
-			    	if(ono_delete == "") {
+			    	if(ono_delete.value == "") {
 			    		alert("빈칸입니다.");
 			    		ono_delete.focus();
 			    		return false;

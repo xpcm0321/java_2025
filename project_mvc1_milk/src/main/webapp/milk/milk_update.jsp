@@ -16,7 +16,7 @@
 		// 3. Driver 연동
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		// 4. DB 연동  - close()
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic", "root", "wlsdlgks9523dls!!");
 		// 5. PreparedStatement 이용해서 sql 처리
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, oname);

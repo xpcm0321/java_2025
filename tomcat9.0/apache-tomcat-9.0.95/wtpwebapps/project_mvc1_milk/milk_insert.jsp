@@ -7,7 +7,6 @@
 	// 2. request.getParameter() 이용해서 데이터받기 #
 	String oname = request.getParameter("oname");
 	int onum = Integer.parseInt(request.getParameter("onum"));
-	// out.println(oname + "/" + onum);
 	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
