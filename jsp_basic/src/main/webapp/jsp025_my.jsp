@@ -6,8 +6,8 @@
 <!-- navbar -->
 <!-- navbar -->
 
-<div class="container card my-5 bg-success">
-	<h3 class="card-header bg-success text-white">MY INFO</h3>
+<div class="container card my-5 bg-info">
+	<h3 class="card-header bg-info text-white">MY INFO</h3>
 	<table class="table table-bordered table-striped table-hover my-3">
 		<tbody>
 			<tr>
@@ -25,6 +25,7 @@
 		</tbody>
 	</table>
 </div>
+
 	
 <!-- my.jsp -->
 <!-- my.jsp -->

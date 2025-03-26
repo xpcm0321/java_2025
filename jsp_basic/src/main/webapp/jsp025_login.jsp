@@ -2,14 +2,14 @@
     pageEncoding="UTF-8"%>
 <!-- login.jsp -->
 <!-- login.jsp -->
-<%@ include file="jsp022_header.jsp" %>
+<%@ include file="jsp025_header.jsp" %>
 <!-- navbar -->
 <!-- navbar -->
 
 <div class="container card my-5">
 	<h3 class="card-header mb-3">LOGIN</h3>
 	<p style="text-align: center;"><img src="images/login.png" alt="login"></p>
-	<form action="jsp022_login_action.jsp" method="post" onsubmit="return login()">
+	<form action="<%=request.getContextPath() %>/user_login" method="post" onsubmit="return login()">
 		<div class="my-3">
 			<label for="name" class="form-label">아이디</label>
 			<input type="text" class="form-control" id="name" name="name">
@@ -24,7 +24,7 @@
 			</label>
 		</div>
 		<div class="my-3" style="text-align:right">
-			<input type="submit" title="login 하러가기" class="btn btn-success" value="LOGIN" />
+			<input type="submit" title="login 하러가기" class="btn btn-info text-white" value="LOGIN" />
 		</div>
 	</form>
 	<script>
@@ -52,7 +52,7 @@
 <!-- footer.jsp -->
 <!-- footer.jsp -->
 <!-- 파일분리 : jsp022_footer.jsp -->
-<%@ include file="jsp022_footer.jsp" %>
+<%@ include file="jsp025_footer.jsp" %>
 
 
 
