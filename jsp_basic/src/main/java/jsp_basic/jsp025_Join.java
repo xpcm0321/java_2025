@@ -46,7 +46,7 @@ public class jsp025_Join extends HttpServlet {
 			
 			int result = pstmt.executeUpdate();  // insert, update, delete | executeQuery - select
 			if (result > 0) {
-				out.println("<script>alert('회원가입성공!'); location.href='jsp022_login.jsp';</script>");
+				out.println("<script>alert('회원가입성공!'); location.href='jsp025_login.jsp';</script>");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

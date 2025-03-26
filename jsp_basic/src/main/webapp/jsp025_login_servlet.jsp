@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!-- login.jsp -->
 <!-- login.jsp -->
-<%@ include file="jsp022_header.jsp" %>
+<%@ include file="jsp025_header.jsp" %>
 <!-- navbar -->
 <!-- navbar -->
 
@@ -52,7 +52,7 @@
 <!-- footer.jsp -->
 <!-- footer.jsp -->
 <!-- 파일분리 : jsp022_footer.jsp -->
-<%@ include file="jsp022_footer.jsp" %>
+<%@ include file="jsp025_footer.jsp" %>
 
 
 

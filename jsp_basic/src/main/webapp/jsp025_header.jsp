@@ -50,7 +50,7 @@
 	          <a class="nav-link" href="jsp025_login.jsp">LOGIN</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="javascript:void(0)">JOIN</a>
+	          <a class="nav-link" href="jsp025_login_servlet.jsp">JOIN</a>
 	        </li>
 	  <%  }  %>
       </ul>
