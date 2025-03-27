@@ -1,0 +1,119 @@
+■ PART001
+Q1. mvc 란?
+- 서로 영향 없이 쉽게 고칠 수 있는 애플리케이션
+- m : model
+- v : view
+- c : controller
+
+Q2. mvc1 vs mvc2란?
+- mvc1 : controller 역할을 jsp가 담당, 스파게티 소스(섞여서 들어감)
+- mvc2 : controller 역할을 servlet이 담당
+
+Q3. DBCP란?
+- 분산응용프로그램
+- db커넥션 객체를 미리 (pool)에 생성해두고 사용
+- 데이터베이스 과부하 줄이기
+
+Q4. jsp는 ( java ) + ( html )
+     mvc에서의 역할은?  view
+
+Q5. servlet은 ( java )
+     mvc에서의 역할은?  controller
+
+Q6. DBCP를 설정하는 방법을 설명하시오.
+1. jar 파일 3개 다운로드 - dbcp, collections, pool
+2. Server - [server.xml]  pool 설정 <Resources /> 추가
+3. 진행하는 프로젝트 - [webapp] - [WEB-INF] - web.xml <resources-ref> 추가
+4. test 파일 만들기
+
+Q7. dynamic web project에서 jsp가 위치하는 영역은 ( webapp ),
+     servlet이 위치하는 영역은 ( Java Resources ),
+     라이브러리들 .jar 파일들이 들어가는 위치는 ( [WEB-INF] - lib )
+
+Q8. request가 오면 ( [WEB-INF] - web.xml ) 파일을 참고해서 controller를 찾는다.
+
+
+Q9. 로그인 후 id를 유지하려고하면 ( session ) 를 이용한다.
+     셋팅이름은 username, 값은 name변수로 지정하시오.
+     session.setAttribute("username", name);
+
+Q10. application scope의 범위
+       application > session > request > pageContext
+
+
+■ PART002
+PROJECT (1) 셋팅
+#1, frontcontroller board 게시판완성
+#2. 개발자사이트 api + ajax
+#3. [숙제] - api 2개 이상 / upgrade 기능업그레이드
+
+
+1) dynamic web project - JOAbooks
+2) inc - header/footer
+3) error page 설정 - 404, 500
+4) dbcp 연동
+
+
+PROJECT (2) MODEL
+DB : table명 - board
+글번호 bno           int(long)        not null        auto_increment primary key
+글제목 btitle         varchar(1000)  not null
+글내용 bcontent    text              not null
+글쓴이 bname       varchar(100)    not null
+조회수 bhit           int                                default 0
+글쓴날짜 bdate      timestamp     not null        default current_timestamp
+아이피 bip            varchar(100)   not null
+32bit/128bit
+
+create table board(
+bno int not null auto_increment primary key,
+btitle varchar(1000) not null,
+bcontent text not null,
+bname varchar(100) not null,
+bhit int default 0,
+bdate timestamp not null default now(),  current_timestamp
+bip varchar(100) not null);
+
+-- 선택사항 : 글비밀번호 bpass
+
+Dto           : [com.company.domain]      - BoardVO      private
+DBManager : [com.company.dbmanager] - DBManager
+Dao          : [com.company.dao]           - BoardDao
+------------------------------------------------------------------------------------------------
+  글쓰기 - insert into board (btitle, bcontent, bname, bip) values (?, ?, ?, ?)
+  최신글읽기 - select * from board order by bno desc
+  해당글읽기 - select * from board where bno = ?
+  조회수증가 - update board set bhit=bhit+1 where bno=?
+  해당글수정폼 - select * from board where bno=?
+  해당글수정기능 - update board set btitle=?, bcontent=? where bno=?
+  해당글삭제 - delete from board where bno=?
+
+------------------------------------------------------------------------------------------------
+참고1)
+executeQuery - select ( 표 )
+executeUpdate - insert, update, delete ( 실행줄수 )
+
+참고2)
+리턴값 메서드명() {}
+
+  1. 글쓰기            - insert into board (btitle, bcontent, bname, bip) values (?, ?, ?, ?)
+      public int insert( BoardVO vo ) { return 0; }
+
+  2. 최신글읽기      - select * from board order by bno desc
+      public ArrayList<BoardVO> selectAll(){ return null; }
+
+  3. 해당글읽기 / 해당글수정폼      - select * from board where bno = ?
+      public BoardVO select( int bno ) { return null; }
+
+  4. 조회수증가      - update board set bhit = bhit + 1 where bno = ?
+      public int updateHit( int bno ){ return 0; }
+
+  5. 해당글수정기능 - update board set btitle = ?, bcontent = ? where bno = ?
+      public int update( BoardVO vo ){ return 0; }
+
+  6. 해당글삭제       - delete from board where bno = ?
+      public int delete( int bno ){ return 0; }
+
+
+■ PART003
+FrontController
