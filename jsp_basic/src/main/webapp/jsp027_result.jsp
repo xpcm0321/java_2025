@@ -12,7 +12,10 @@
 </head>
 <body>
 	<div class="container card my-5">
-		<h3 class="card-header"></h3>
+		<h3 class="card-header">DATA</h3>
+		<%=request.getParameter("name") %>
+		<hr />
+		${param.name}
 	</div>
 </body>
 </html>

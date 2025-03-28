@@ -1,0 +1,33 @@
+Q11. 데이터베이스 언어인 dml을 설명
+- crud
+- 데이터 조작어(Data Manipulation Language)
+- insert, select, update, delete
+
+Q12. PreparedStatement에서 sql 문 실행시
+       insert, update, delete 에서는 ( executeUpdate )를 사용,
+       select에서는 ( executeQuery )를 사용한다.
+
+Q13. frontcontroller 패턴을 설명하시오
+   1. mvc(model view controller)
+   2. mvc1 - jsp가 controller 역할
+   3. mvc2 - servlet이 controller 역할
+   4. frontcontroller - 클라이언트가 보낸 요청을 받아서 공통작업(인증, 권한)을 먼저 수행
+		   적절한 세부 controller에게 작업을 위임 (처리 + 뷰 선택)
+
+Q14. *.do를 설정하려고 한다. servlet의 경로를 가져오는 request메서드는?
+   방법1. @WebServlet("*.do")  Servlet - 테스트(WebServlet이 한 개라면 web.xml에 등록할 필요 없음)
+   방법2. web.xml - 배포관리용도
+      <servlet></servlet>
+      <servlet-mapping></servlet-mapping>
+
+Q15. 다형성이란?
+    - 
+
+Q16. request/response 유지하고 경로를 숨기고 다른화면으로 넘어가는 것은?
+
+
+Q17. request/response 유지 안 되고 다른화면으로 넘어가는 3가지 방법은?
+
+
+Q18. 다음과 같이 경로를 넘어가려고 한다.
+       request/response 유지 안 되고 다른화면으로 넘어가는 3가지 방법 중 alert가 처리 안 되는 것은?

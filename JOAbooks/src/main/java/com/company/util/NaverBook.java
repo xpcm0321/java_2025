@@ -1,4 +1,4 @@
-package com.company.java018;
+package com.company.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,14 +6,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class Network002_book {
-	public static void main(String[] args) {
+public class NaverBook {
+	public void getBooks() {
 		try {
 			// https://openapi.naver.com/v1/search/book.xml		XML
 			// https://openapi.naver.com/v1/search/book.json	JSON
 			
 			// https://openapi.naver.com/v1/search/book_adv.xml?d_titl=
-			String apiurl = "https://openapi.naver.com/v1/search/book.xml?query=" + URLEncoder.encode("경제", "UTF-8");
+			String apiurl = "https://openapi.naver.com/v1/search/book.xml?query=" + URLEncoder.encode("요리", "UTF-8");
 			URL url = new URL(apiurl);
 			
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
