@@ -26,28 +26,28 @@ public class Test2_boardDao {
 	public void test() throws UnknownHostException {
 		// 5. delete
 		BoardDto dto = new BoardDto();
-		dto.setBpass("1111");
-		dto.setBno(1);
+		dto.setBpass("2222");
+		dto.setBno(2);
 		System.out.println(dao.delete(dto));
 		
 		// 4. update
-		// BoardDto dto = new BoardDto();
-		dto.setBtitle("title-new");
-		dto.setBpass("1111");
-		dto.setBcontent("content-new");
-		dto.setBno(1);
+//		BoardDto dto = new BoardDto();
+		dto.setBtitle("title2-new");
+		dto.setBpass("2222");
+		dto.setBcontent("content2-new");
+		dto.setBno(2);
 		System.out.println(dao.update(dto));
 		
 		// 3. selectOne
-		System.out.println(dao.updateHit(1));
-		System.out.println(dao.select(1));
+		System.out.println(dao.updateHit(2));
+		System.out.println(dao.select(2));
 		
 		// 2. insert
-		// BoardDto dto = new BoardDto();
-		dto.setBname("first");
-		dto.setBtitle("title");
-		dto.setBpass("1111");
-		dto.setBcontent("content");
+//		BoardDto dto = new BoardDto();
+		dto.setBname("second");
+		dto.setBtitle("title2");
+		dto.setBpass("2222");
+		dto.setBcontent("content2");
 		dto.setBip(InetAddress.getLocalHost().getHostAddress());
 		System.out.println(dao.insert(dto));
 		// 1. selectAll
