@@ -18,39 +18,32 @@ import com.company.dto.BoardDto;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:config/root-context.xml")
 public class Test2_boardDao {
-	@Autowired ApplicationContext context;
+	@Autowired ApplicationContext  context;
 	@Autowired DataSource dataSource;
 	@Autowired BoardDao dao;
-	
-	@Test
-	public void test() throws UnknownHostException {
-		// 5. delete
-//		BoardDto dto = new BoardDto();
-//		dto.setBpass("2222");
-//		dto.setBno(2);
+	@Test public void test() throws UnknownHostException {
+//		//5. delete
+//		BoardDto dto = new BoardDto(); 
+//		dto.setBpass("1111");       dto.setBno(1); 
 //		System.out.println(dao.delete(dto));
-		
-		// 4. update
-//		BoardDto dto = new BoardDto();
-//		dto.setBtitle("title2-new");
-//		dto.setBpass("2222");
-//		dto.setBcontent("content2-new");
-//		dto.setBno(2);
+//		//4. update
+////		BoardDto dto = new BoardDto();
+//		dto.setBtitle("title-new"); dto.setBcontent("content-new");
+//		dto.setBpass("1111");       dto.setBno(1); 
 //		System.out.println(dao.update(dto));
-		
-		// 3. selectOne
-//		System.out.println(dao.updateHit(2));
-//		System.out.println(dao.select(2));
-		
-		// 2. insert
-//		BoardDto dto = new BoardDto();
-//		dto.setBname("second");
-//		dto.setBtitle("title2");
-//		dto.setBpass("2222");
-//		dto.setBcontent("content2");
-//		dto.setBip(InetAddress.getLocalHost().getHostAddress());
+//		//3. select
+//		//System.out.println(dao.updateHit(1));
+//		System.out.println(dao.select(1));
+//		//2. insert
+////		BoardDto dto = new BoardDto();
+//		dto.setBname("first");   dto.setBtitle("title");  dto.setBpass("1111");
+//		dto.setBcontent("content");  
+//		dto.setBip(InetAddress.getLocalHost().getHostAddress());  
 //		System.out.println(dao.insert(dto));
-		// 1. selectAll
+		//1. selectAll
 		System.out.println(dao.selectAll());
 	}
 }
+
+
+

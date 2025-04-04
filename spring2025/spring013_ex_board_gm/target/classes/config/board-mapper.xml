@@ -29,6 +29,6 @@
 	</select>
 	
 	<select id="selectAll" resultType="BoardDto">
-		select * from sboard
+		select * from sboard order by bno desc <!-- 최신글이 항상 맨위로 -->
 	</select>
 </mapper>
